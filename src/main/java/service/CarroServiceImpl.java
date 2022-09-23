@@ -32,6 +32,9 @@ public class CarroServiceImpl implements CarroService {
 
     @Override
     public String estadoAtual(Carro carro) {
-        return carro.toString();
+        return "O carro está ligado: " +
+                carro.isLigado() +
+                " e a velocidade atual é: " +
+                carro.getVelocidadeAtual();
     }
 }
