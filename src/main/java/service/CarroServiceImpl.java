@@ -5,7 +5,11 @@ import model.Carro;
 public class CarroServiceImpl implements CarroService {
 
     @Override
-    public void acelerar(Carro carro, int velocidadeAMais) {
+    public void acelerar(Carro carro, int velocidadeAMais) throws Exception {
+        if(velocidadeAMais <= 0) {
+            throw new Exception("A velocidade deve ser maior que zero");
+        }
+
         if(carro.isLigado()) {
             carro.setVelocidadeAtual(carro.getVelocidadeAtual() + velocidadeAMais);
         }
