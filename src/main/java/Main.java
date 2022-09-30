@@ -1,7 +1,3 @@
-import model.Carro;
-import org.junit.Test;
-import service.CarroService;
-import service.CarroServiceImpl;
 
 /**
  *

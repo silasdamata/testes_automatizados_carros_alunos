@@ -16,7 +16,11 @@ public class CarroServiceImpl implements CarroService {
     }
 
     @Override
-    public void frear(Carro carro, int velocidadeAMenos) {
+    public void frear(Carro carro, int velocidadeAMenos) throws Exception {
+        if(velocidadeAMenos <= 0) {
+            throw new Exception("Impossivel frear valor menor que 1!");
+        }
+
         if(velocidadeAMenos >= carro.getVelocidadeAtual()) {
             carro.setVelocidadeAtual(0);
         } else {
