@@ -6,7 +6,7 @@ public class CarroBuilder {
 
     private Carro carro;
 
-    public static CarroBuilder retonarCarro() {
+    public static CarroBuilder retonarCarroBuilder() {
         CarroBuilder carroBuilder = new CarroBuilder();
         carroBuilder.carro = new Carro("cor", "marca", "ano", "modelo", 100);
         return carroBuilder;
@@ -15,6 +15,8 @@ public class CarroBuilder {
     public Carro get() {
         return carro;
     }
+
+
 
     public CarroBuilder ligado() {
         carro.setLigado(true);

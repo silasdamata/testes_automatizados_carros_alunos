@@ -1,0 +1,7 @@
+service\GPS.class
+Main.class
+service\CarroService.class
+service\GPSFake.class
+model\Carro.class
+service\SistemaDeSeguranca.class
+service\CarroServiceImpl.class
